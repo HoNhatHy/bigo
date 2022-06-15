@@ -1,0 +1,234 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #141414;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    column-gap: 5.2rem;
+    padding: 1.2rem 5.2rem;
+    background-color: #faa2c1;
+    color: #141414;
+}
+
+.main-container {
+    height: 2000px;
+}
+
+.sky-media-logo {
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.bigo-logo {
+    width: 3rem;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.nav-item:link,
+.nav-item:visited {
+    color: #141414;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-btn-box {
+    justify-self: end;
+}
+
+.nav-signup-btn {
+    padding: 1.2rem 2.4rem;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all 0.3s;
+}
+
+.nav-signup-btn:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.idol-img {
+    width: 10rem;
+}
+
+.hero-section {
+    padding: 4.8rem 0;
+    flex-direction: column;
+    height: 85vh;
+    background-image: linear-gradient(to bottom, #faa2c1,#fff);
+    background-size: cover;
+    background-position: center;
+}
+
+.primary-heading {
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.5rem;
+    animation: moveRightLeft 1.5s 0.1s;
+}
+
+.primary-heading-description {
+    font-size: 2.4rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 4.8rem;
+    animation: moveLeftRight 1.5s 0.1s;
+}
+
+.hero-btn {
+    position: relative;
+
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+
+  display: inline-block;
+
+  transition: all 0.2s ease-in;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-white {
+    background-color: #fff;
+  }
+
+  .hero-btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  .btn-white::after {
+    background-color: #fff;
+  }
+  
+  .hero-btn:hover::after {
+    transform: scale(1.4, 1.6);
+    opacity: 0;
+  }
+  
+  .btn-animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+@keyframes moveRightLeft {
+    0% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(5%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes moveLeftRight {
+    0% {
+        transform: translateX(5%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-5%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.require-benefit {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.8rem;
+}
+
+.require-benefit h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+}
+
+.require-benefit ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.require-benefit li {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+.require-icon {
+    width: 3rem;
+}
