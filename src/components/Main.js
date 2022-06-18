@@ -1,5 +1,27 @@
 import React from "react";
 
+import one from "../images/idols/1.jpg";
+import two from "../images/idols/2.jpg";
+import three from "../images/idols/3.jpg";
+import four from "../images/idols/4.jpg";
+import five from "../images/idols/5.jpg";
+import six from "../images/idols/6.jpg";
+import seven from "../images/idols/7.jpg";
+import eight from "../images/idols/8.jpg";
+import nine from "../images/idols/9.jpg";
+import ten from "../images/idols/10.jpg";
+import eleven from "../images/idols/11.jpg";
+import twelve from "../images/idols/12.jpg";
+import thirteen from "../images/idols/13.jpg";
+import fourteen from "../images/idols/14.jpg";
+import fifteen from "../images/idols/15.jpg";
+import sixteen from "../images/idols/16.jpg";
+import seventeen from "../images/idols/17.jpg";
+import eighteen from "../images/idols/18.jpg";
+import nineteen from "../images/idols/19.jpg";
+import twenty from "../images/idols/20.jpg";
+import hienthanh from "../images/idols/hienthanh.jpg";
+
 class Main extends React.Component {
   render() {
     return (
@@ -131,7 +153,7 @@ class Main extends React.Component {
                   />
                 </svg>
                 <span>
-                  THU NHẬP KHỦNG: mức lương có thể lên đến hàng trăm triệu đồng
+                  Thu nhập khủng: mức lương có thể lên đến hàng trăm triệu đồng
                 </span>
               </li>
               <li>
@@ -150,7 +172,7 @@ class Main extends React.Component {
                   />
                 </svg>
                 <span>
-                  CƠ HỘI PHÁT TRIỂN: có nhiều cơ hội để phát triển về tài năng,
+                  Cơ hội phát triển: có nhiều cơ hội để phát triển về tài năng,
                   cơ hội thay đổi bản thân và kinh tế gia đình
                 </span>
               </li>
@@ -170,7 +192,7 @@ class Main extends React.Component {
                   />
                 </svg>
                 <span>
-                  ĐỊNH HƯỚNG TƯƠNG LAI: Được đào tạo bài bản, định hướng trở
+                  Định hướng tương lai: Được đào tạo bài bản, định hướng trở
                   thành IDOL chuyên nghiệp phù hợp với khả năng
                 </span>
               </li>
@@ -190,12 +212,46 @@ class Main extends React.Component {
                   />
                 </svg>
                 <span>
-                  ĐỘI NGŨ HỖ TRỢ: hỗ trợ thiết bị live, phòng live (nếu idol ở
+                  Đội ngũ hỗ trợ: hỗ trợ thiết bị live, phòng live (nếu idol ở
                   TPHCM). Có admin hỗ trợ liên tục. Được push để tiếp cận user 1
                   cách tốt nhất
                 </span>
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="container idols-container flex-center">
+          <div className="idols-box">
+            <div className="idols">
+              <img src={one} alt="bigolive idols" />
+              <img src={two} alt="bigolive idols" />
+              <img src={three} alt="bigolive idols" />
+              <img src={four} alt="bigolive idols" />
+              <img src={five} alt="bigolive idols" />
+              <img src={six} alt="bigolive idols" />
+              <img src={seven} alt="bigolive idols" />
+              <img src={eight} alt="bigolive idols" />
+              <img src={nine} alt="bigolive idols" />
+              <img src={ten} alt="bigolive idols" />
+              <img
+                src={hienthanh}
+                className="hienthanh-img"
+                alt="bigolive idols"
+              />
+              <img src={eleven} alt="bigolive idols" />
+              <img src={twelve} alt="bigolive idols" />
+              <img src={thirteen} alt="bigolive idols" />
+              <img src={fourteen} alt="bigolive idols" />
+              <img src={fifteen} alt="bigolive idols" />
+              <img src={sixteen} alt="bigolive idols" />
+              <img src={seventeen} alt="bigolive idols" />
+              <img src={eighteen} alt="bigolive idols" />
+              <img src={nineteen} alt="bigolive idols" />
+              <img src={twenty} alt="bigolive idols" />
+            </div>
+            <div className="idols-heading-box flex-center">
+              <h2>Streamers nổi bật</h2>
+            </div>
           </div>
         </div>
       </div>

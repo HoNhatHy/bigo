@@ -1,30 +1,36 @@
 .btn {
-    border: none;
-    cursor: pointer;
-    font-family: inherit;    
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
-    stroke: #d6336c;
+  stroke: #d6336c;
 }
 
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 .nav.sticky {
-    width: 100vw;
-    position: fixed;
-    z-index: 10;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
