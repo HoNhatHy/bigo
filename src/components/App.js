@@ -3,6 +3,7 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import Nav from "./Nav";
 import Main from "./Main";
+import Introduction from "./Introduction";
 import history from "../history";
 import logo from "../images/sky-media.jpeg";
 
@@ -17,9 +18,17 @@ class App extends React.Component {
           <main className="main-container">
             <Switch>
               <Route path="/" exact component={Main} />
+              <Route path="/gioi-thieu" exact component={Introduction} />
             </Switch>
           </main>
           <footer>
+            <h2 className="sologan container ">
+              " Spy Media tự hào là đôi cánh chắp ước mơ các bạn bay cao.
+              <span>
+                Hãy đồng hành cùng chúng tôi để có một tương lai tốt đẹp hơn
+                nhé! "
+              </span>
+            </h2>
             <div className="footer-container">
               <div className="company-logo">
                 <img className="spy-logo" src={logo} alt="TH Vega logo" />
