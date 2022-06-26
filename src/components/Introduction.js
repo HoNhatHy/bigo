@@ -383,9 +383,9 @@ class Introduction extends React.Component {
           <div className="testimonial">
             <img
               className="hienthanh-testimonial-img"
-              src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t39.30808-6/272039850_3132419817047123_6054733328690641608_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=DVeyQ3hTvCoAX9Kuccc&tn=NT89KOVnfwj5031I&_nc_ht=scontent.fsgn3-1.fna&oh=00_AT_99l-ZONhp8xjQqP45R9dTN4XCuShhPJSXZJuA4nBERw&oe=62BAD1F1"
+              src="https://scontent.fsgn13-2.fna.fbcdn.net/v/t39.30808-6/259711626_3084674891821616_1853475545464379996_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=maI2f4srGscAX_xb5oS&tn=NT89KOVnfwj5031I&_nc_ht=scontent.fsgn13-2.fna&oh=00_AT_3AOdhjgjObZ5CNNoXKeCKeRx3EP88IACCyblQq3bt2A&oe=62BC386F"
             />
-            <div className="share">
+            <div className="share share-1">
               <div>
                 <p>
                   Do tôi và tổng giám đốc công ty SPY là bạn thân khi còn học
@@ -396,23 +396,25 @@ class Introduction extends React.Component {
                   năm 2 mức thu nhập ấy cũng đc xem là cao so với mặt bằng chung
                   với các bạn sinh viên.
                 </p>
-                <p>
-                  Streamer như chúng tôi không cần phải ra ngoài lăn lộn, chỉ ở
-                  nhà rồi on mic, on screen và chiến thôi.
-                </p>
-                <p>
-                  Tôi cũng được xem như là cây cỗ thụ của SPY MEDIA, cùng MEDIA
-                  đồng hành cho đến hiện tại đã được 3 năm. Tôi cảm ơn và rất
-                  vui khi được SPY MEDIA giúp đỡ trong thời gian chập chững, gục
-                  ngã vì mệt mỏi và cho đến hiện tại.
-                </p>
               </div>
-              <div className="qoute">
-                <p>
-                  " Chia sẻ của chị Jungnan - Top 10 tại Đêm chung kết Bigo Gala
-                  2020 "
-                </p>
-              </div>
+            </div>
+            <div className="share share-2">
+              <p>
+                Streamer như chúng tôi không cần phải ra ngoài lăn lộn, chỉ ở
+                nhà rồi on mic, on screen và chiến thôi.
+              </p>
+              <p>
+                Tôi cũng được xem như là cây cỗ thụ của SPY MEDIA, cùng MEDIA
+                đồng hành cho đến hiện tại đã được 3 năm. Tôi cảm ơn và rất vui
+                khi được SPY MEDIA giúp đỡ trong thời gian chập chững, gục ngã
+                vì mệt mỏi và cho đến hiện tại.
+              </p>
+            </div>
+            <div className="qoute">
+              <p>
+                " Chia sẻ của chị Jungnan - Top 10 tại Đêm chung kết Bigo Gala
+                2020 "
+              </p>
             </div>
           </div>
         </div>

@@ -96,11 +96,13 @@ class Nav extends React.Component {
           )}
         </button>
         <div className="nav-container">
-          <img
-            className="spy-media-logo"
-            src={require("../images/sky-media.jpeg")}
-            alt="Sky-media"
-          />
+          <Link to="/">
+            <img
+              className="spy-media-logo"
+              src={require("../images/sky-media.jpeg")}
+              alt="Sky-media"
+            />
+          </Link>
           <div className="nav-items" ref={this.navItems}>
             <Link to="/" className="nav-item link" onClick={this.onMenuClose}>
               Trang chủ

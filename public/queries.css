@@ -8,6 +8,10 @@
   .container {
     max-width: 100rem;
   }
+
+  .testimonial {
+    grid-template-columns: 1fr 1.7fr;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -34,6 +38,10 @@
   .company-infors h3 {
     margin-bottom: 3.2rem;
   }
+
+  .testimonial {
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
 
 @media (max-width: 900px) {
@@ -58,6 +66,43 @@
   .footer-container {
     max-width: 80rem;
     grid-template-columns: 1fr 2.5fr;
+  }
+
+  .testimonial {
+    grid-template-columns: 1fr;
+  }
+
+  .hienthanh-testimonial-img {
+    margin-bottom: 1.2rem;
+  }
+
+  .share-2 {
+    grid-column: 1;
+  }
+
+  .qoute {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+    row-gap: 3.2rem;
+  }
+
+  .intro-icon {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .right-icon {
+    transform: rotate(90deg);
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
   }
 }
 
@@ -215,6 +260,10 @@
     grid-column: 3 / span 2;
     grid-row: 2 / span 2;
   }
+
+  .introduction .content {
+    padding: 0 3.2rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -276,6 +325,36 @@
   .sologan span {
     display: inline;
   }
+
+  .container.introduction {
+    max-width: 45rem;
+  }
+
+  .testimonial {
+    padding: 2.4rem;
+  }
+
+  .component {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .component.flex-center {
+    padding: 6.4rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-items {
+    width: 100vw;
+  }
+
+  .hero-section {
+    height: 87vh;
+  }
+
+  .primary-heading {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -283,9 +362,8 @@
     font-size: 43.75%;
   }
 
-  .nav {
-    padding: 1.2rem 3.6rem;
-    grid-template-columns: 1fr 2fr;
+  .hero-section {
+    height: 89vh;
   }
 
   .hero-section {
@@ -293,7 +371,6 @@
   }
 
   .primary-heading {
-    font-size: 4rem;
     letter-spacing: 2px;
   }
 
@@ -312,5 +389,16 @@
 
   .idols-heading-box {
     font-size: 3.6rem;
+  }
+
+  .what-streamer {
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav {
+    padding: 1.2rem 3.6rem;
+    grid-template-columns: 1fr 2fr;
   }
 }
