@@ -106,7 +106,7 @@ class App extends React.Component {
                 className="side-link"
                 href="https://www.messenger.com/t/100006270889006"
               >
-                <img src={messenger} />
+                <img src={messenger} className="messenger-img" />
               </a>
               <a
                 className="side-link"

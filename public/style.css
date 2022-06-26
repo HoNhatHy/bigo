@@ -559,6 +559,10 @@ td {
   width: 5rem;
 }
 
+.side-link .messenger-img {
+  width: 6rem;
+}
+
 .side-btn {
   padding: 3px 0;
   background-color: transparent;
