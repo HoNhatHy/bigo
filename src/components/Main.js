@@ -241,8 +241,8 @@ class Main extends React.Component {
               <img src={four} alt="bigolive idols" />
               <img src={five} alt="bigolive idols" />
               <img src={six} alt="bigolive idols" />
-              <img src={seven} alt="bigolive idols" />
-              <img src={eight} alt="bigolive idols" />
+              <img src={seven} className="seven-eight" alt="bigolive idols" />
+              <img src={eight} className="seven-eight" alt="bigolive idols" />
               <img src={nine} alt="bigolive idols" />
               <img src={ten} alt="bigolive idols" />
               <img
