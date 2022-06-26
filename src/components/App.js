@@ -6,8 +6,19 @@ import Main from "./Main";
 import Introduction from "./Introduction";
 import history from "../history";
 import logo from "../images/sky-media.jpeg";
+import phone from "../images/phone.png";
+import messenger from "../images/messenger.png";
+import tiktok from "../images/tiktok.png";
 
 class App extends React.Component {
+  state = { upBtn: "" };
+
+  constructor(props) {
+    super(props);
+    this.sideBarContainer = React.createRef();
+    this.linkContainer = React.createRef();
+  }
+
   componentDidMount() {}
 
   render() {
@@ -79,6 +90,85 @@ class App extends React.Component {
             </div>
           </footer>
         </Router>
+        <div className="side-bar">
+          <div
+            className="side-bar-container flex-column-center"
+            ref={this.sideBarContainer}
+          >
+            <div
+              className="link-container flex-column-center"
+              ref={this.linkContainer}
+            >
+              <a className="side-link" href="tel:+84905577176 ">
+                <img src={phone} />
+              </a>
+              <a
+                className="side-link"
+                href="https://www.messenger.com/t/100006270889006"
+              >
+                <img src={messenger} />
+              </a>
+              <a
+                className="side-link"
+                href="https://www.tiktok.com/@sweetiestore"
+              >
+                <img src={tiktok} />
+              </a>
+            </div>
+            <button
+              className="side-btn btn flex-center"
+              onClick={() => {
+                if (this.state.upBtn) {
+                  this.sideBarContainer.current.style.overflow = "inherit";
+                  this.linkContainer.current.style.transform =
+                    "translate(-50%, 0)";
+                  this.setState({ upBtn: "" });
+                } else {
+                  this.linkContainer.current.style.transform =
+                    "translate(-50%, 200%)";
+                  setTimeout(
+                    () =>
+                      (this.sideBarContainer.current.style.overflow = "hidden"),
+                    400
+                  );
+                  this.setState({ upBtn: "up" });
+                }
+              }}
+            >
+              {this.state.upBtn ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="up-icon icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 15l7-7 7 7"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="up-icon icon"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
