@@ -3,6 +3,16 @@ import React from "react";
 import team from "../images/introduction/team.jpg";
 
 class Introduction extends React.Component {
+  componentDidMount() {
+    if (window.innerWidth < 700) {
+      const navLinks = Array.from(document.querySelectorAll(".nav-item"));
+
+      navLinks[0].classList.remove("border-pink");
+      navLinks[1].classList.add("border-pink");
+      navLinks[2].classList.remove("border-pink");
+    }
+  }
+
   render() {
     return (
       <div className="container introduction">

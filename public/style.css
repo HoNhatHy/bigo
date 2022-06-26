@@ -17,16 +17,37 @@ body {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  align-items: center;
-  column-gap: 5.2rem;
   padding: 1.2rem 5.2rem;
   background-color: #faa2c1;
   color: #141414;
 }
 
-.sky-media-logo {
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  column-gap: 5.2rem;
+}
+
+.nav-btn {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.nav-btn-icon {
+  stroke: #000;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.3s;
+}
+
+.nav-btn:hover .nav-btn-icon {
+  stroke: #a61e4d;
+}
+
+.spy-media-logo {
   width: 7rem;
   border-radius: 50%;
 }
@@ -36,6 +57,8 @@ nav {
 }
 
 .nav-items {
+  justify-self: center;
+  column-gap: 3.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,6 +109,7 @@ nav {
 }
 
 .primary-heading {
+  text-align: center;
   font-size: 6.4rem;
   font-weight: 700;
   margin-bottom: 2.4rem;

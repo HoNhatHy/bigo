@@ -33,11 +33,18 @@
 .nav.sticky {
   width: 100vw;
   position: fixed;
-  z-index: 10;
+  z-index: 1;
 }
 
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }

@@ -23,11 +23,23 @@ import twenty from "../images/idols/20.jpg";
 import hienthanh from "../images/idols/hienthanh.jpg";
 
 class Main extends React.Component {
+  componentDidMount() {
+    if (window.innerWidth < 700) {
+      const navLinks = Array.from(document.querySelectorAll(".nav-item"));
+
+      navLinks[0].classList.add("border-pink");
+      navLinks[1].classList.remove("border-pink");
+      navLinks[2].classList.remove("border-pink");
+    }
+  }
+
   render() {
     return (
       <div className="home-page">
         <div className="hero-section flex-center">
-          <h1 className="primary-heading">Tìm kiếm Streamer Việt Nam</h1>
+          <h1 className="primary-heading">
+            Tìm kiếm <span> Streamer Việt Nam </span>
+          </h1>
           <p className="primary-heading-description">
             Thu nhập khủng từ $200 - $5000
           </p>

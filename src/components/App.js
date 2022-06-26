@@ -16,6 +16,7 @@ class App extends React.Component {
         <Router history={history}>
           <Nav />
           <main className="main-container">
+            <div className="main-container1"></div>
             <Switch>
               <Route path="/" exact component={Main} />
               <Route path="/gioi-thieu" exact component={Introduction} />
