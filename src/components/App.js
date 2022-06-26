@@ -127,7 +127,7 @@ class App extends React.Component {
                   setTimeout(
                     () =>
                       (this.sideBarContainer.current.style.overflow = "hidden"),
-                    100
+                    300
                   );
                   this.linkContainer.current.style.transform =
                     "translate(-50%, 200%)";
@@ -153,7 +153,7 @@ class App extends React.Component {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="up-icon icon"
+                  class="up-icon icon"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -162,7 +162,7 @@ class App extends React.Component {
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
+                    d="M19 9l-7 7-7-7"
                   />
                 </svg>
               )}
