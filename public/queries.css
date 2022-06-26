@@ -269,6 +269,7 @@
 @media (max-width: 500px) {
   .nav {
     grid-template-columns: 1fr 1.5fr;
+    padding: 1.2rem 3.6rem;
   }
 
   .nav-container {
@@ -398,7 +399,6 @@
 
 @media (max-width: 350px) {
   .nav {
-    padding: 1.2rem 3.6rem;
     grid-template-columns: 1fr 2fr;
   }
 }
