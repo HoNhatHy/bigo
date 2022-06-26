@@ -124,13 +124,13 @@ class App extends React.Component {
                     "translate(-50%, 0)";
                   this.setState({ upBtn: "" });
                 } else {
-                  this.linkContainer.current.style.transform =
-                    "translate(-50%, 200%)";
                   setTimeout(
                     () =>
                       (this.sideBarContainer.current.style.overflow = "hidden"),
-                    400
+                    100
                   );
+                  this.linkContainer.current.style.transform =
+                    "translate(-50%, 200%)";
                   this.setState({ upBtn: "up" });
                 }
               }}
